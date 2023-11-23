@@ -16,7 +16,7 @@ class HomeLayout extends React.Component {
 
   render() {
     return (
-      <Layout style={{ minHeight: "100vh" }}>
+      <Layout>
         <SideMenu collapsed={this.state.collapsed ? 1 : 0} />
         <Layout>
           <Header

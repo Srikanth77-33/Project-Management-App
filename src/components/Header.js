@@ -12,8 +12,19 @@ import {
   Affix,
 } from "antd";
 import styled from "styled-components";
+import { connect } from "react-redux";
+import { useNavigate } from "react-router";
 
-const Header = ({ collapsed, toggle }) => {
+const Header = (props) => {
+  const { collapsed, toggle, data } = props;
+  const nav = useNavigate();
+
+  const handleSelect = (value) => {
+    let key = value.split(" ")[0];
+    let state = data.filter((item) => item.key === Number(key))[0];
+    nav(`/projects/${state.projectName.replace(/ /g, "-")}`, { state: state });
+  };
+
   return (
     <Affix offsetTop>
       <StyledHeader>
@@ -31,6 +42,15 @@ const Header = ({ collapsed, toggle }) => {
               style={{ width: "300px" }}
               placeholder="Search..."
               optionLabelProp="value"
+              onSelect={handleSelect}
+              dataSource={data.map(
+                ({ projectName, key }) => `${key} ${projectName}`
+              )}
+              filterOption={(inputValue, option) =>
+                option.props.children
+                  .toUpperCase()
+                  .indexOf(inputValue.toUpperCase()) !== -1
+              }
             >
               <Input
                 suffix={<Icon type="search" style={{ color: "#056b6b" }} />}
@@ -56,7 +76,7 @@ const Header = ({ collapsed, toggle }) => {
                       <Menu.Item key="3">3rd menu item</Menu.Item>
                     </Menu>
                   }
-                  trigger={["click"]}
+                  trigger={["click", "hover"]}
                 >
                   <div>
                     <StyledIcon type="user" />
@@ -84,4 +104,8 @@ const StyledHeader = styled(Layout.Header)`
   top: -1px;
 `;
 
-export default Header;
+const mapStateToProps = (state) => {
+  return { data: state.table.tableData };
+};
+
+export default connect(mapStateToProps, {})(Header);

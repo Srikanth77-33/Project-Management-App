@@ -1,5 +1,5 @@
 import "./App.css";
-import { Content } from "./components";
+import { Content, Form } from "./components";
 import { HomeLayout } from "./layouts";
 import {
   createBrowserRouter,
@@ -19,6 +19,7 @@ const router = createBrowserRouter(
       <Route path="/task1" element={<H1 text="TASK-1" />} />
       <Route path="/task2" element={<H1 text="TASK-2" />} />
       <Route path="/projects">
+        <Route path=":id" element={<Form />} />
         <Route path="a" element={<H1 text="Project-A" />} />
         <Route path="b" element={<H1 text="Project-B" />} />
       </Route>

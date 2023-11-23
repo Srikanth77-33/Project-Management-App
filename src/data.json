@@ -4,700 +4,1099 @@
     "projectName": "Project A",
     "serviceType": "Web Development",
     "dueDate": "2023-11-20",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["ramu", "ravi", "somu"],
+    "description": "A project description is a high-level overview of why you’re doing a project. The document explains a project’s objectives and its essential qualities. Think of it as the elevator pitch that focuses on what and why without delving into how.",
+    "noOfUnits": 5,
+    "completionPercentage": "67.88"
   },
   {
     "key": 2,
     "projectName": "Project B",
     "serviceType": "App Development",
     "dueDate": "2023-11-25",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["emma", "michael", "sara"],
+    "description": "A third project description for demonstration purposes.",
+    "noOfUnits": 3,
+    "completionPercentage": "90.50"
   },
   {
     "key": 3,
     "projectName": "Project C",
     "serviceType": "Graphic Design",
     "dueDate": "2023-11-28",
-    "action": "progress"
+    "status": "progress",
+    "viewers": ["john", "alice", "bob"],
+    "description": "Another project with a brief description.",
+    "noOfUnits": 8,
+    "completionPercentage": "45.20"
   },
   {
     "key": 4,
     "projectName": "Project D",
     "serviceType": "Content Writing",
     "dueDate": "2023-12-02",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["david", "lisa", "peter"],
+    "description": "Yet another project with a concise overview.",
+    "noOfUnits": 6,
+    "completionPercentage": "25.75"
   },
   {
     "key": 5,
     "projectName": "Project E",
     "serviceType": "Social Media Marketing",
     "dueDate": "2023-12-05",
-    "action": "progress"
+    "status": "progress",
+    "viewers": ["emma", "michael", "sara"],
+    "description": "A third project description for demonstration purposes.",
+    "noOfUnits": 3,
+    "completionPercentage": "90.50"
   },
   {
     "key": 6,
     "projectName": "Project F",
     "serviceType": "Search Engine Optimization",
     "dueDate": "2023-12-09",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["mason", "zoey", "mia"],
+    "description": "A project involving cutting-edge technology and a global audience.",
+    "noOfUnits": 12,
+    "completionPercentage": "40.90"
   },
   {
     "key": 7,
     "projectName": "Project G",
     "serviceType": "Pay-Per-Click Advertising",
     "dueDate": "2023-12-12",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["emma", "michael", "sara"],
+    "description": "A third project description for demonstration purposes.",
+    "noOfUnits": 3,
+    "completionPercentage": "90.50"
   },
   {
     "key": 8,
     "projectName": "Project H",
     "serviceType": "Email Marketing",
     "dueDate": "2023-12-16",
-    "action": "progress"
+    "status": "progress",
+    "viewers": ["john", "alice", "bob"],
+    "description": "Another project with a brief description.",
+    "noOfUnits": 8,
+    "completionPercentage": "45.20"
   },
   {
     "key": 9,
     "projectName": "Project I",
     "serviceType": "Customer Relationship Management",
     "dueDate": "2023-12-19",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["grace", "ryan", "hannah"],
+    "description": "Another project to showcase various viewers and their interests.",
+    "noOfUnits": 4,
+    "completionPercentage": "75.60"
   },
   {
     "key": 10,
     "projectName": "Project J",
     "serviceType": "Project Management",
     "dueDate": "2023-12-23",
-    "action": "progress"
+    "status": "progress",
+    "viewers": ["john", "alice", "bob"],
+    "description": "Another project with a brief description.",
+    "noOfUnits": 8,
+    "completionPercentage": "45.20"
   },
   {
     "key": 11,
     "projectName": "Project K",
     "serviceType": "Web Design",
     "dueDate": "2024-01-06",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["sam", "jane", "tom"],
+    "description": "Fifth project description for the JSON array.",
+    "noOfUnits": 7,
+    "completionPercentage": "80.10"
   },
   {
     "key": 12,
     "projectName": "Project L",
     "serviceType": "UX Design",
     "dueDate": "2024-01-09",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["emma", "michael", "sara"],
+    "description": "A third project description for demonstration purposes.",
+    "noOfUnits": 3,
+    "completionPercentage": "90.50"
   },
   {
     "key": 13,
     "projectName": "Project M",
     "serviceType": "Brand Strategy",
     "dueDate": "2024-01-13",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["ramu", "ravi", "somu"],
+    "description": "A project description is a high-level overview of why you’re doing a project. The document explains a project’s objectives and its essential qualities. Think of it as the elevator pitch that focuses on what and why without delving into how.",
+    "noOfUnits": 5,
+    "completionPercentage": "67.88"
   },
   {
     "key": 14,
     "projectName": "Project N",
     "serviceType": "Marketing Automation",
     "dueDate": "2024-01-16",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["alex", "olivia", "charlie"],
+    "description": "A project with diverse viewers and an interesting description.",
+    "noOfUnits": 10,
+    "completionPercentage": "55.30"
   },
   {
     "key": 15,
     "projectName": "Project O",
     "serviceType": "Sales Training",
     "dueDate": "2024-01-20",
-    "action": "progress"
+    "status": "progress",
+    "viewers": ["mason", "zoey", "mia"],
+    "description": "A project involving cutting-edge technology and a global audience.",
+    "noOfUnits": 12,
+    "completionPercentage": "40.90"
   },
   {
     "key": 16,
     "projectName": "Project P",
-    "serviceType": "Customer Success Management",
+    "serviceType": "Customer completed Management",
     "dueDate": "2024-01-23",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["emma", "michael", "sara"],
+    "description": "A third project description for demonstration purposes.",
+    "noOfUnits": 3,
+    "completionPercentage": "90.50"
   },
   {
     "key": 17,
     "projectName": "Project Q",
     "serviceType": "Event Management",
     "dueDate": "2024-01-27",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["david", "lisa", "peter"],
+    "description": "Yet another project with a concise overview.",
+    "noOfUnits": 6,
+    "completionPercentage": "25.75"
   },
   {
     "key": 18,
     "projectName": "Project R",
     "serviceType": "Public Relations",
     "dueDate": "2024-01-30",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["grace", "ryan", "hannah"],
+    "description": "Another project to showcase various viewers and their interests.",
+    "noOfUnits": 4,
+    "completionPercentage": "75.60"
   },
   {
     "key": 19,
     "projectName": "Project S",
     "serviceType": "Video Production",
     "dueDate": "2024-02-03",
-    "action": "progress"
+    "status": "progress",
+    "viewers": ["ramu", "ravi", "somu"],
+    "description": "A project description is a high-level overview of why you’re doing a project. The document explains a project’s objectives and its essential qualities. Think of it as the elevator pitch that focuses on what and why without delving into how.",
+    "noOfUnits": 5,
+    "completionPercentage": "67.88"
   },
   {
     "key": 20,
     "projectName": "Project T",
     "serviceType": "Photography",
     "dueDate": "2024-02-06",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["sam", "jane", "tom"],
+    "description": "Fifth project description for the JSON array.",
+    "noOfUnits": 7,
+    "completionPercentage": "80.10"
   },
   {
     "key": 21,
     "projectName": "Project U",
     "serviceType": "Illustration",
     "dueDate": "2024-02-10",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["david", "lisa", "peter"],
+    "description": "Yet another project with a concise overview.",
+    "noOfUnits": 6,
+    "completionPercentage": "25.75"
   },
   {
     "key": 22,
     "projectName": "Project V",
     "serviceType": "Animation",
     "dueDate": "2024-02-13",
-    "action": "progress"
+    "status": "progress",
+    "viewers": ["emma", "michael", "sara"],
+    "description": "A third project description for demonstration purposes.",
+    "noOfUnits": 3,
+    "completionPercentage": "90.50"
   },
   {
     "key": 23,
     "projectName": "Project W",
     "serviceType": "3D Modeling",
     "dueDate": "2024-02-17",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["john", "alice", "bob"],
+    "description": "Another project with a brief description.",
+    "noOfUnits": 8,
+    "completionPercentage": "45.20"
   },
   {
     "key": 24,
     "projectName": "Project X",
     "serviceType": "Game Development",
     "dueDate": "2024-02-20",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["john", "alice", "bob"],
+    "description": "Another project with a brief description.",
+    "noOfUnits": 8,
+    "completionPercentage": "45.20"
   },
   {
     "key": 25,
     "projectName": "Project Y",
     "serviceType": "E-Learning Development",
     "dueDate": "2024-02-24",
-    "action": "progress"
+    "status": "progress",
+    "viewers": ["alex", "olivia", "charlie"],
+    "description": "A project with diverse viewers and an interesting description.",
+    "noOfUnits": 10,
+    "completionPercentage": "55.30"
   },
   {
     "key": 26,
     "projectName": "Project Z",
     "serviceType": "Training Materials Development",
     "dueDate": "2024-02-27",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["ramu", "ravi", "somu"],
+    "description": "A project description is a high-level overview of why you’re doing a project. The document explains a project’s objectives and its essential qualities. Think of it as the elevator pitch that focuses on what and why without delving into how.",
+    "noOfUnits": 5,
+    "completionPercentage": "67.88"
   },
   {
     "key": 27,
     "projectName": "Project AA",
     "serviceType": "Translation Services",
     "dueDate": "2024-03-02",
-    "action": "progress"
+    "status": "progress",
+    "viewers": ["grace", "ryan", "hannah"],
+    "description": "Another project to showcase various viewers and their interests.",
+    "noOfUnits": 4,
+    "completionPercentage": "75.60"
   },
   {
     "key": 28,
     "projectName": "Project BB",
     "serviceType": "Transcription Services",
     "dueDate": "2024-03-05",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["emma", "michael", "sara"],
+    "description": "A third project description for demonstration purposes.",
+    "noOfUnits": 3,
+    "completionPercentage": "90.50"
   },
   {
     "key": 29,
     "projectName": "Project CC",
     "serviceType": "Proofreading Services",
     "dueDate": "2024-03-09",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["david", "lisa", "peter"],
+    "description": "Yet another project with a concise overview.",
+    "noOfUnits": 6,
+    "completionPercentage": "25.75"
   },
   {
     "key": 30,
     "projectName": "Project DD",
     "serviceType": "Copywriting Services",
     "dueDate": "2024-03-12",
-    "action": "progress"
+    "status": "progress",
+    "viewers": ["sam", "jane", "tom"],
+    "description": "Fifth project description for the JSON array.",
+    "noOfUnits": 7,
+    "completionPercentage": "80.10"
   },
   {
     "key": 31,
     "projectName": "Project EE",
     "serviceType": "Content Editing Services",
     "dueDate": "2024-03-16",
-    "action": "progress"
+    "status": "progress",
+    "viewers": ["john", "alice", "bob"],
+    "description": "Another project with a brief description.",
+    "noOfUnits": 8,
+    "completionPercentage": "45.20"
   },
   {
     "key": 32,
     "projectName": "Project FF",
     "serviceType": "Localization Services",
     "dueDate": "2024-03-19",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["mason", "zoey", "mia"],
+    "description": "A project involving cutting-edge technology and a global audience.",
+    "noOfUnits": 12,
+    "completionPercentage": "40.90"
   },
   {
     "key": 33,
     "projectName": "Project GG",
     "serviceType": "Multilingual Marketing Services",
     "dueDate": "2024-03-23",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["emma", "michael", "sara"],
+    "description": "A third project description for demonstration purposes.",
+    "noOfUnits": 3,
+    "completionPercentage": "90.50"
   },
   {
     "key": 34,
     "projectName": "Project HH",
     "serviceType": "Cultural Sensitivity Training",
     "dueDate": "2024-03-26",
-    "action": "progress"
+    "status": "progress",
+    "viewers": ["ramu", "ravi", "somu"],
+    "description": "A project description is a high-level overview of why you’re doing a project. The document explains a project’s objectives and its essential qualities. Think of it as the elevator pitch that focuses on what and why without delving into how.",
+    "noOfUnits": 5,
+    "completionPercentage": "67.88"
   },
   {
     "key": 35,
     "projectName": "Project II",
     "serviceType": "Cross-Cultural Communication Training",
     "dueDate": "2024-03-30",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["david", "lisa", "peter"],
+    "description": "Yet another project with a concise overview.",
+    "noOfUnits": 6,
+    "completionPercentage": "25.75"
   },
   {
     "key": 36,
     "projectName": "Project JJ",
     "serviceType": "Global Business Etiquette Training",
     "dueDate": "2024-04-03",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["john", "alice", "bob"],
+    "description": "Another project with a brief description.",
+    "noOfUnits": 8,
+    "completionPercentage": "45.20"
   },
   {
     "key": 37,
     "projectName": "Project KK",
     "serviceType": "International Project Management Training",
     "dueDate": "2024-04-06",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["alex", "olivia", "charlie"],
+    "description": "A project with diverse viewers and an interesting description.",
+    "noOfUnits": 10,
+    "completionPercentage": "55.30"
   },
   {
     "key": 38,
     "projectName": "Project LL",
     "serviceType": "Intercultural Leadership Training",
     "dueDate": "2024-04-09",
-    "action": "progress"
+    "status": "progress",
+    "viewers": ["mason", "zoey", "mia"],
+    "description": "A project involving cutting-edge technology and a global audience.",
+    "noOfUnits": 12,
+    "completionPercentage": "40.90"
   },
   {
     "key": 39,
     "projectName": "Project MM",
     "serviceType": "Diversity and Inclusion Training",
     "dueDate": "2024-04-13",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["emma", "michael", "sara"],
+    "description": "A third project description for demonstration purposes.",
+    "noOfUnits": 3,
+    "completionPercentage": "90.50"
   },
   {
     "key": 40,
     "projectName": "Project NN",
     "serviceType": "Unconscious Bias Training",
     "dueDate": "2024-04-16",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["grace", "ryan", "hannah"],
+    "description": "Another project to showcase various viewers and their interests.",
+    "noOfUnits": 4,
+    "completionPercentage": "75.60"
   },
   {
     "key": 41,
     "projectName": "Project OO",
     "serviceType": "Web Development",
     "dueDate": "2023-10-05",
-    "action": "progress"
+    "status": "progress",
+    "viewers": ["ramu", "ravi", "somu"],
+    "description": "A project description is a high-level overview of why you’re doing a project. The document explains a project’s objectives and its essential qualities. Think of it as the elevator pitch that focuses on what and why without delving into how.",
+    "noOfUnits": 5,
+    "completionPercentage": "67.88"
   },
   {
     "key": 42,
     "projectName": "Project PP",
     "serviceType": "App Development",
     "dueDate": "2023-10-10",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["john", "alice", "bob"],
+    "description": "Another project with a brief description.",
+    "noOfUnits": 8,
+    "completionPercentage": "45.20"
   },
   {
     "key": 43,
     "projectName": "Project QQ",
     "serviceType": "Graphic Design",
     "dueDate": "2023-10-15",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["david", "lisa", "peter"],
+    "description": "Yet another project with a concise overview.",
+    "noOfUnits": 6,
+    "completionPercentage": "25.75"
   },
   {
     "key": 44,
     "projectName": "Project RR",
     "serviceType": "Content Writing",
     "dueDate": "2023-10-20",
-    "action": "progress"
+    "status": "progress",
+    "viewers": ["sam", "jane", "tom"],
+    "description": "Fifth project description for the JSON array.",
+    "noOfUnits": 7,
+    "completionPercentage": "80.10"
   },
   {
     "key": 45,
     "projectName": "Project SS",
     "serviceType": "Social Media Marketing",
     "dueDate": "2023-10-25",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["emma", "michael", "sara"],
+    "description": "A third project description for demonstration purposes.",
+    "noOfUnits": 3,
+    "completionPercentage": "90.50"
   },
   {
     "key": 46,
     "projectName": "Project TT",
     "serviceType": "Search Engine Optimization",
     "dueDate": "2023-10-30",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["emma", "michael", "sara"],
+    "description": "A third project description for demonstration purposes.",
+    "noOfUnits": 3,
+    "completionPercentage": "90.50"
   },
   {
     "key": 47,
     "projectName": "Project UU",
     "serviceType": "Pay-Per-Click Advertising",
     "dueDate": "2023-11-04",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["john", "alice", "bob"],
+    "description": "Another project with a brief description.",
+    "noOfUnits": 8,
+    "completionPercentage": "45.20"
   },
   {
     "key": 48,
     "projectName": "Project VV",
     "serviceType": "Email Marketing",
     "dueDate": "2023-11-08",
-    "action": "progress"
+    "status": "progress",
+    "viewers": ["david", "lisa", "peter"],
+    "description": "Yet another project with a concise overview.",
+    "noOfUnits": 6,
+    "completionPercentage": "25.75"
   },
   {
     "key": 49,
     "projectName": "Project WW",
     "serviceType": "Customer Relationship Management",
     "dueDate": "2023-11-11",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["ramu", "ravi", "somu"],
+    "description": "A project description is a high-level overview of why you’re doing a project. The document explains a project’s objectives and its essential qualities. Think of it as the elevator pitch that focuses on what and why without delving into how.",
+    "noOfUnits": 5,
+    "completionPercentage": "67.88"
   },
   {
     "key": 50,
     "projectName": "Project XX",
     "serviceType": "Project Management",
     "dueDate": "2023-11-15",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["john", "alice", "bob"],
+    "description": "Another project with a brief description.",
+    "noOfUnits": 8,
+    "completionPercentage": "45.20"
   },
-
   {
     "key": 51,
     "projectName": "Project YY",
     "serviceType": "Web Development",
     "dueDate": "2023-09-25",
-    "action": "progress"
+    "status": "progress",
+    "viewers": ["alex", "olivia", "charlie"],
+    "description": "A project with diverse viewers and an interesting description.",
+    "noOfUnits": 10,
+    "completionPercentage": "55.30"
   },
   {
     "key": 52,
     "projectName": "Project ZZ",
     "serviceType": "App Development",
     "dueDate": "2023-09-30",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["emma", "michael", "sara"],
+    "description": "A third project description for demonstration purposes.",
+    "noOfUnits": 3,
+    "completionPercentage": "90.50"
   },
   {
     "key": 53,
     "projectName": "Project AAA",
     "serviceType": "Graphic Design",
     "dueDate": "2023-10-04",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["grace", "ryan", "hannah"],
+    "description": "Another project to showcase various viewers and their interests.",
+    "noOfUnits": 4,
+    "completionPercentage": "75.60"
   },
   {
     "key": 54,
     "projectName": "Project BBB",
     "serviceType": "Content Writing",
     "dueDate": "2023-10-09",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["mason", "zoey", "mia"],
+    "description": "A project involving cutting-edge technology and a global audience.",
+    "noOfUnits": 12,
+    "completionPercentage": "40.90"
   },
   {
     "key": 55,
     "projectName": "Project CCC",
     "serviceType": "Social Media Marketing",
     "dueDate": "2023-10-14",
-    "action": "progress"
+    "status": "progress",
+    "viewers": ["david", "lisa", "peter"],
+    "description": "Yet another project with a concise overview.",
+    "noOfUnits": 6,
+    "completionPercentage": "25.75"
   },
   {
     "key": 56,
     "projectName": "Project DDD",
     "serviceType": "Search Engine Optimization",
     "dueDate": "2023-10-19",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["sam", "jane", "tom"],
+    "description": "Fifth project description for the JSON array.",
+    "noOfUnits": 7,
+    "completionPercentage": "80.10"
   },
   {
     "key": 57,
     "projectName": "Project EEE",
     "serviceType": "Pay-Per-Click Advertising",
     "dueDate": "2023-10-24",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["john", "alice", "bob"],
+    "description": "Another project with a brief description.",
+    "noOfUnits": 8,
+    "completionPercentage": "45.20"
   },
   {
     "key": 58,
     "projectName": "Project FFF",
     "serviceType": "Email Marketing",
     "dueDate": "2023-10-29",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["john", "alice", "bob"],
+    "description": "Another project with a brief description.",
+    "noOfUnits": 8,
+    "completionPercentage": "45.20"
   },
   {
     "key": 59,
     "projectName": "Project GGG",
     "serviceType": "Customer Relationship Management",
     "dueDate": "2023-11-03",
-    "action": "progress"
+    "status": "progress",
+    "viewers": ["ramu", "ravi", "somu"],
+    "description": "A project description is a high-level overview of why you’re doing a project. The document explains a project’s objectives and its essential qualities. Think of it as the elevator pitch that focuses on what and why without delving into how.",
+    "noOfUnits": 5,
+    "completionPercentage": "67.88"
   },
   {
     "key": 60,
     "projectName": "Project HHH",
     "serviceType": "Project Management",
     "dueDate": "2023-11-08",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["emma", "michael", "sara"],
+    "description": "A third project description for demonstration purposes.",
+    "noOfUnits": 3,
+    "completionPercentage": "90.50"
   },
   {
     "key": 61,
     "projectName": "Project III",
     "serviceType": "Localization Services",
     "dueDate": "2023-09-15",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["alex", "olivia", "charlie"],
+    "description": "A project with diverse viewers and an interesting description.",
+    "noOfUnits": 10,
+    "completionPercentage": "55.30"
   },
   {
     "key": 62,
     "projectName": "Project JJJ",
     "serviceType": "Website Translation",
     "dueDate": "2023-09-19",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["grace", "ryan", "hannah"],
+    "description": "Another project to showcase various viewers and their interests.",
+    "noOfUnits": 4,
+    "completionPercentage": "75.60"
   },
   {
     "key": 63,
     "projectName": "Project KKK",
     "serviceType": "Document Translation",
     "dueDate": "2023-09-23",
-    "action": "progress"
+    "status": "progress",
+    "viewers": ["david", "lisa", "peter"],
+    "description": "Yet another project with a concise overview.",
+    "noOfUnits": 6,
+    "completionPercentage": "25.75"
   },
   {
     "key": 64,
     "projectName": "Project LLL",
     "serviceType": "Software Localization",
     "dueDate": "2023-09-27",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["john", "alice", "bob"],
+    "description": "Another project with a brief description.",
+    "noOfUnits": 8,
+    "completionPercentage": "45.20"
   },
   {
     "key": 65,
     "projectName": "Project MMM",
     "serviceType": "E-Learning Localization",
     "dueDate": "2023-10-01",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["david", "lisa", "peter"],
+    "description": "Yet another project with a concise overview.",
+    "noOfUnits": 6,
+    "completionPercentage": "25.75"
   },
   {
     "key": 66,
     "projectName": "Project NNN",
     "serviceType": "Multilingual Website Design",
     "dueDate": "2023-10-06",
-    "action": "progress"
+    "status": "progress",
+    "viewers": ["emma", "michael", "sara"],
+    "description": "A third project description for demonstration purposes.",
+    "noOfUnits": 3,
+    "completionPercentage": "90.50"
   },
   {
     "key": 67,
     "projectName": "Project OOO",
     "serviceType": "Multilingual Marketing Campaigns",
     "dueDate": "2023-10-11",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["john", "alice", "bob"],
+    "description": "Another project with a brief description.",
+    "noOfUnits": 8,
+    "completionPercentage": "45.20"
   },
   {
     "key": 68,
     "projectName": "Project PPP",
     "serviceType": "Global Customer Support",
     "dueDate": "2023-10-16",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["ramu", "ravi", "somu"],
+    "description": "A project description is a high-level overview of why you’re doing a project. The document explains a project’s objectives and its essential qualities. Think of it as the elevator pitch that focuses on what and why without delving into how.",
+    "noOfUnits": 5,
+    "completionPercentage": "67.88"
   },
   {
     "key": 69,
     "projectName": "Project QQQ",
     "serviceType": "Cross-Cultural Communication Consulting",
     "dueDate": "2023-10-21",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["emma", "michael", "sara"],
+    "description": "A third project description for demonstration purposes.",
+    "noOfUnits": 3,
+    "completionPercentage": "90.50"
   },
   {
     "key": 70,
     "projectName": "Project RRR",
     "serviceType": "International Business Development",
     "dueDate": "2023-10-26",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["sam", "jane", "tom"],
+    "description": "Fifth project description for the JSON array.",
+    "noOfUnits": 7,
+    "completionPercentage": "80.10"
   },
   {
     "key": 71,
     "projectName": "Project SSS",
     "serviceType": "Global Expansion Strategies",
     "dueDate": "2023-11-01",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["david", "lisa", "peter"],
+    "description": "Yet another project with a concise overview.",
+    "noOfUnits": 6,
+    "completionPercentage": "25.75"
   },
   {
     "key": 72,
     "projectName": "Project TTT",
     "serviceType": "Multicultural Marketing Research",
     "dueDate": "2023-11-06",
-    "action": "progress"
+    "status": "progress",
+    "viewers": ["john", "alice", "bob"],
+    "description": "Another project with a brief description.",
+    "noOfUnits": 8,
+    "completionPercentage": "45.20"
   },
   {
     "key": 73,
     "projectName": "Project UUU",
     "serviceType": "Global Talent Acquisition",
     "dueDate": "2023-11-11",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["alex", "olivia", "charlie"],
+    "description": "A project with diverse viewers and an interesting description.",
+    "noOfUnits": 10,
+    "completionPercentage": "55.30"
   },
   {
     "key": 74,
     "projectName": "Project VVV",
     "serviceType": "Cultural Competency Training",
     "dueDate": "2023-11-16",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["john", "alice", "bob"],
+    "description": "Another project with a brief description.",
+    "noOfUnits": 8,
+    "completionPercentage": "45.20"
   },
   {
     "key": 75,
     "projectName": "Project WWW",
     "serviceType": "Global Leadership Development",
     "dueDate": "2023-11-21",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["david", "lisa", "peter"],
+    "description": "Yet another project with a concise overview.",
+    "noOfUnits": 6,
+    "completionPercentage": "25.75"
   },
   {
     "key": 76,
     "projectName": "Project XXX",
     "serviceType": "Diversity and Inclusion Consulting",
     "dueDate": "2023-11-26",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["emma", "michael", "sara"],
+    "description": "A third project description for demonstration purposes.",
+    "noOfUnits": 3,
+    "completionPercentage": "90.50"
   },
   {
     "key": 77,
     "projectName": "Project YYY",
     "serviceType": "Unconscious Bias Training",
     "dueDate": "2023-12-01",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["david", "lisa", "peter"],
+    "description": "Yet another project with a concise overview.",
+    "noOfUnits": 6,
+    "completionPercentage": "25.75"
   },
   {
     "key": 78,
     "projectName": "Project ZZZ",
     "serviceType": "Global Teambuilding and Collaboration",
     "dueDate": "2023-12-06",
-    "action": "progress"
+    "status": "progress",
+    "viewers": ["emma", "michael", "sara"],
+    "description": "A third project description for demonstration purposes.",
+    "noOfUnits": 3,
+    "completionPercentage": "90.50"
   },
   {
     "key": 79,
     "projectName": "Project AAA",
     "serviceType": "International Conflict Resolution",
     "dueDate": "2023-12-11",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["ramu", "ravi", "somu"],
+    "description": "A project description is a high-level overview of why you’re doing a project. The document explains a project’s objectives and its essential qualities. Think of it as the elevator pitch that focuses on what and why without delving into how.",
+    "noOfUnits": 5,
+    "completionPercentage": "67.88"
   },
   {
     "key": 80,
     "projectName": "Project BBB",
     "serviceType": "Cross-Cultural Negotiation Training",
     "dueDate": "2022-12-11",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["emma", "michael", "sara"],
+    "description": "A third project description for demonstration purposes.",
+    "noOfUnits": 3,
+    "completionPercentage": "90.50"
   },
   {
     "key": 81,
     "projectName": "Project CCC",
     "serviceType": "Global Crisis Management",
     "dueDate": "2023-12-27",
-    "action": "progress"
+    "status": "progress",
+    "viewers": ["sam", "jane", "tom"],
+    "description": "Fifth project description for the JSON array.",
+    "noOfUnits": 7,
+    "completionPercentage": "80.10"
   },
   {
     "key": 82,
     "projectName": "Project DDD",
     "serviceType": "Cultural Intelligence Development",
     "dueDate": "2023-12-31",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["mason", "zoey", "mia"],
+    "description": "A project involving cutting-edge technology and a global audience.",
+    "noOfUnits": 12,
+    "completionPercentage": "40.90"
   },
   {
     "key": 83,
     "projectName": "Project EEE",
     "serviceType": "Global Mindset Coaching",
     "dueDate": "2024-01-05",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["john", "alice", "bob"],
+    "description": "Another project with a brief description.",
+    "noOfUnits": 8,
+    "completionPercentage": "45.20"
   },
   {
     "key": 84,
     "projectName": "Project FFF",
     "serviceType": "Expatriate Support Services",
     "dueDate": "2024-01-10",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["alex", "olivia", "charlie"],
+    "description": "A project with diverse viewers and an interesting description.",
+    "noOfUnits": 10,
+    "completionPercentage": "55.30"
   },
   {
     "key": 85,
     "projectName": "Project GGG",
     "serviceType": "Cross-Cultural Training for Families",
     "dueDate": "2024-01-15",
-    "action": "progress"
+    "status": "progress",
+    "viewers": ["mason", "zoey", "mia"],
+    "description": "A project involving cutting-edge technology and a global audience.",
+    "noOfUnits": 12,
+    "completionPercentage": "40.90"
   },
   {
     "key": 86,
     "projectName": "Project HHH",
     "serviceType": "Multicultural Education for Children",
     "dueDate": "2024-01-20",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["emma", "michael", "sara"],
+    "description": "A third project description for demonstration purposes.",
+    "noOfUnits": 3,
+    "completionPercentage": "90.50"
   },
   {
     "key": 87,
     "projectName": "Project III",
     "serviceType": "Global Community Engagement",
     "dueDate": "2024-01-25",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["david", "lisa", "peter"],
+    "description": "Yet another project with a concise overview.",
+    "noOfUnits": 6,
+    "completionPercentage": "25.75"
   },
   {
     "key": 88,
     "projectName": "Project JJJ",
     "serviceType": "Social Impact Initiatives",
     "dueDate": "2024-01-30",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["grace", "ryan", "hannah"],
+    "description": "Another project to showcase various viewers and their interests.",
+    "noOfUnits": 4,
+    "completionPercentage": "75.60"
   },
   {
     "key": 89,
     "projectName": "Project KKK",
     "serviceType": "International Volunteerism",
     "dueDate": "2024-02-04",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["john", "alice", "bob"],
+    "description": "Another project with a brief description.",
+    "noOfUnits": 8,
+    "completionPercentage": "45.20"
   },
   {
     "key": 90,
     "projectName": "Project LLL",
     "serviceType": "Global Development and Poverty Alleviation",
     "dueDate": "2024-02-09",
-    "action": "progress"
+    "status": "progress",
+    "viewers": ["john", "alice", "bob"],
+    "description": "Another project with a brief description.",
+    "noOfUnits": 8,
+    "completionPercentage": "45.20"
   },
   {
     "key": 91,
     "projectName": "Project MMM",
     "serviceType": "Cross-Cultural Communication for Peacebuilding",
     "dueDate": "2024-02-14",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["emma", "michael", "sara"],
+    "description": "A third project description for demonstration purposes.",
+    "noOfUnits": 3,
+    "completionPercentage": "90.50"
   },
   {
     "key": 92,
     "projectName": "Project NNN",
     "serviceType": "Intercultural Conflict Resolution",
     "dueDate": "2024-02-19",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["sam", "jane", "tom"],
+    "description": "Fifth project description for the JSON array.",
+    "noOfUnits": 7,
+    "completionPercentage": "80.10"
   },
   {
     "key": 93,
     "projectName": "Project OOO",
     "serviceType": "Cultural Exchange Programs",
     "dueDate": "2024-02-24",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["mason", "zoey", "mia"],
+    "description": "A project involving cutting-edge technology and a global audience.",
+    "noOfUnits": 12,
+    "completionPercentage": "40.90"
   },
   {
     "key": 94,
     "projectName": "Project PPP",
     "serviceType": "Global Citizenship Education",
     "dueDate": "2024-02-29",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["emma", "michael", "sara"],
+    "description": "A third project description for demonstration purposes.",
+    "noOfUnits": 3,
+    "completionPercentage": "90.50"
   },
   {
     "key": 95,
     "projectName": "Project QQQ",
     "serviceType": "International Peace Corps",
     "dueDate": "2024-03-05",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["david", "lisa", "peter"],
+    "description": "Yet another project with a concise overview.",
+    "noOfUnits": 6,
+    "completionPercentage": "25.75"
   },
   {
     "key": 96,
     "projectName": "Project RRR",
     "serviceType": "Humanitarian Aid and Disaster Relief",
     "dueDate": "2024-03-10",
-    "action": "progress"
+    "status": "progress",
+    "viewers": ["david", "lisa", "peter"],
+    "description": "Yet another project with a concise overview.",
+    "noOfUnits": 6,
+    "completionPercentage": "25.75"
   },
   {
     "key": 97,
     "projectName": "Project SSS",
     "serviceType": "Global Sustainable Development",
     "dueDate": "2024-03-15",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["alex", "olivia", "charlie"],
+    "description": "A project with diverse viewers and an interesting description.",
+    "noOfUnits": 10,
+    "completionPercentage": "55.30"
   },
   {
     "key": 98,
     "projectName": "Project SSS",
     "serviceType": "Development",
     "dueDate": "2024-03-15",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["ramu", "ravi", "somu"],
+    "description": "A project description is a high-level overview of why you’re doing a project. The document explains a project’s objectives and its essential qualities. Think of it as the elevator pitch that focuses on what and why without delving into how.",
+    "noOfUnits": 5,
+    "completionPercentage": "67.88"
   },
   {
     "key": 99,
     "projectName": "Project RRR",
     "serviceType": "Humanitarian Aid and Disaster Relief",
     "dueDate": "2023-03-10",
-    "action": "success"
+    "status": "completed",
+    "viewers": ["david", "lisa", "peter"],
+    "description": "Yet another project with a concise overview.",
+    "noOfUnits": 6,
+    "completionPercentage": "25.75"
   },
   {
     "key": 100,
     "projectName": "NNN",
     "serviceType": "Resolution",
     "dueDate": "2022-02-19",
-    "action": "assigned"
+    "status": "assigned",
+    "viewers": ["john", "alice", "bob"],
+    "description": "Another project with a brief description.",
+    "noOfUnits": 8,
+    "completionPercentage": "45.20"
   }
 ]

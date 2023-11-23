@@ -16,13 +16,18 @@ import {
   updatePageData,
   filterTableData,
 } from "../store/table/tableActions";
+import { NavLink } from "react-router-dom";
 
 const columns = [
   {
     title: "Project Name",
     dataIndex: "projectName",
     key: "projectName",
-    render: (text) => <a href={`#${text}`}>{text}</a>,
+    render: (text, record) => (
+      <NavLink state={record} to={`/projects/${text.replace(/ /g, "-")}`}>
+        {text}
+      </NavLink>
+    ),
   },
   {
     title: "Service Type",
@@ -35,15 +40,15 @@ const columns = [
     key: "dueDate",
   },
   {
-    title: "Action",
-    dataIndex: "action",
-    key: "action",
+    title: "Status",
+    dataIndex: "status",
+    key: "status",
     render: (text, record) => {
       let currentDate = new Date();
       let date = new Date(record.dueDate);
       let color;
       let message;
-      if (currentDate > date && text !== "success") {
+      if (currentDate > date && text !== "completed") {
         color = "red";
         message = "DELAYED";
       } else if (text === "assigned") {
@@ -54,7 +59,7 @@ const columns = [
         message = "PROGRESS";
       } else {
         color = "green";
-        message = "SUCCESS";
+        message = "COMPLETED";
       }
       return (
         <span>
@@ -100,7 +105,7 @@ class TableComp extends Component {
               <Menu.Item key="progress">Progress</Menu.Item>
               <Menu.Item key="assigned">Assigned</Menu.Item>
               <Menu.Item key="delay">Delay</Menu.Item>
-              <Menu.Item key="success">Success</Menu.Item>
+              <Menu.Item key="completed">Completed</Menu.Item>
             </Menu>
           }
           trigger={["click"]}

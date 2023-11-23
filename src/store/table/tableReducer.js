@@ -4,6 +4,7 @@ import {
   SET_LOADING,
   UPDATE_CURRENT_PAGE_DATA,
   FILTER_TABLE_DATA,
+  UPDATE_PROJECT_DETAILS,
 } from "./actionTypes";
 
 const tableData = {
@@ -51,14 +52,14 @@ export const tableReducer = (state = tableData, { type, payload }) => {
           let currentDate = new Date();
           let date = new Date(item.dueDate);
 
-          if (currentDate > date && item.action !== "success") {
+          if (currentDate > date && item.status !== "completed") {
             if (payload === "delay") {
               return true;
             } else {
               return false;
             }
           } else {
-            if (item.action === payload) {
+            if (item.status === payload) {
               return true;
             } else {
               return false;
@@ -67,7 +68,16 @@ export const tableReducer = (state = tableData, { type, payload }) => {
         });
       }
       return { ...state, filteredData: newData, dataLength: newData.length };
-
+    case UPDATE_PROJECT_DETAILS:
+      return {
+        ...state,
+        tableData: state.tableData.map((item) => {
+          if (item.key === payload.key) {
+            return payload;
+          }
+          return item;
+        }),
+      };
     default:
       return state;
   }
