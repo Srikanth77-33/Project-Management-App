@@ -1,7 +1,8 @@
 import React from "react";
 import { Form, Input } from "antd";
 
-const ProjectName = ({ getFieldDecorator, edit }) => {
+const ProjectName = ({ form, edit, formData }) => {
+  const { getFieldDecorator } = form;
   const style = edit
     ? {}
     : {
@@ -20,14 +21,14 @@ const ProjectName = ({ getFieldDecorator, edit }) => {
 
   return (
     <Form.Item label="Project Name">
-      {getFieldDecorator("name", {
+      {getFieldDecorator("projectName", {
         rules: [
           { required: true, message: "Project Name is required!" },
           { validator: validate },
         ],
+        initialValue: formData.projectName,
       })(<Input style={style} disabled={!edit} />)}
     </Form.Item>
   );
 };
-
 export default ProjectName;

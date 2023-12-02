@@ -1,7 +1,8 @@
 import React from "react";
 import { Form, Input } from "antd";
 
-const ServiceType = ({ getFieldDecorator, edit }) => {
+const ServiceType = ({ form, edit, formData }) => {
+  const { getFieldDecorator } = form;
   const style = edit
     ? { width: 800 }
     : {
@@ -14,6 +15,7 @@ const ServiceType = ({ getFieldDecorator, edit }) => {
   return (
     <Form.Item label="Service Type">
       {getFieldDecorator("serviceType", {
+        initialValue: formData.serviceType,
         rules: [
           {
             required: true,

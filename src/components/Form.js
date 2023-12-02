@@ -1,76 +1,37 @@
 import { Button, Row, Col, Typography, Spin } from "antd";
 import React, { useState } from "react";
 import { useLocation } from "react-router";
-import moment from "moment";
+
 import { updateProjectDetails } from "../store/table/tableActions";
 import { connect } from "react-redux";
-import FormCreator from "./form/FormCreator";
+import ProjectDetailsForm from "./form/ProjectDetailsForm";
 
 const Form = (props) => {
-  const dateFormat = "YYYY-MM-DD";
   const { state } = useLocation();
-
-  let [currentFormData, setCurrentFormData] = useState({
-    name: { value: state.projectName || "" },
-    serviceType: { value: state.serviceType || "" },
-    status: { value: state.status || "" },
-    viewers: { value: state.viewers || [] },
-    dueDate: { value: moment(state.dueDate, dateFormat) || {} },
-    nUnits: { value: state.noOfUnits || 0 },
-    desc: { value: state.description || "" },
-    percentage: { value: state.completionPercentage || 0 },
-  });
-
-  const [fields, setFields] = useState({
-    name: { value: state.projectName || "" },
-    serviceType: { value: state.serviceType || "" },
-    status: { value: state.status || "" },
-    viewers: { value: state.viewers || [] },
-    dueDate: { value: moment(state.dueDate, dateFormat) || {} },
-    nUnits: { value: state.noOfUnits || 0 },
-    desc: { value: state.description || "" },
-    percentage: { value: state.completionPercentage || 0 },
-  });
 
   const [edit, setEdit] = useState(false);
   const [validFormData, setValidFormData] = useState({ err: null, values: {} });
   const [formChanged, setFormChanged] = useState(false);
   const [loading, setLoading] = useState(false);
-
-  const handleFormChange = (changedFields) => {
-    setFormChanged(true);
-    setFields((fields) => ({ ...fields, ...changedFields }));
-  };
+  const [cancle, setCancle] = useState(false);
+  const [save, setSave] = useState(false);
+  const [name, setName] = useState(state.projectName);
 
   const handleCancle = () => {
     setEdit(false);
-    setFields({ ...currentFormData });
+    setCancle(true);
   };
 
-  const handleSubmit = () => {
-    const details = {
-      key: state.key,
-      projectName: fields.name.value,
-      serviceType: fields.serviceType.value,
-      dueDate: moment(fields.dueDate.value).format(dateFormat),
-      status: fields.status.value,
-      viewers: fields.viewers.value,
-      description: fields.desc.value,
-      noOfUnits: fields.nUnits.value,
-      completionPercentage: fields.percentage.value,
-    };
-
+  const handleSave = () => {
     setLoading(true);
     setTimeout(() => {
-      props.updateProjectDetails(details);
+      setSave(true);
       setFormChanged(false);
       setLoading(false);
       setEdit(false);
     }, 1000);
-    setCurrentFormData({ ...fields });
   };
 
-  // moment(date).format(dateFormat)
   return (
     <div
       style={{
@@ -84,7 +45,7 @@ const Form = (props) => {
             <Col>
               <Typography.Title level={4}>
                 Project Name:
-                <Typography.Text code>{fields.name.value}</Typography.Text>
+                <Typography.Text code>{name}</Typography.Text>
               </Typography.Title>
             </Col>
             <Col>
@@ -94,7 +55,7 @@ const Form = (props) => {
                     type="primary"
                     style={{ marginRight: 16, width: 70 }}
                     disabled={validFormData.err || !formChanged}
-                    onClick={handleSubmit}
+                    onClick={handleSave}
                     loading={loading}
                   >
                     {loading ? "" : "save"}
@@ -144,12 +105,17 @@ const Form = (props) => {
             </Col>
             <Col style={{ padding: 24 }}>
               <Spin tip="Updating..." size="large" spinning={loading}>
-                <FormCreator
-                  state={state}
-                  fields={fields}
-                  onChange={handleFormChange}
+                <ProjectDetailsForm
+                  data={state}
                   edit={edit}
+                  setName={setName}
                   setValidFormData={setValidFormData}
+                  setFormChanged={setFormChanged}
+                  cancle={cancle}
+                  setCancle={setCancle}
+                  save={save}
+                  setSave={setSave}
+                  updateProjectDetails={props.updateProjectDetails}
                 />
               </Spin>
             </Col>

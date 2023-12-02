@@ -1,7 +1,8 @@
 import React from "react";
 import { Form, InputNumber } from "antd";
 
-const NUnits = ({ getFieldDecorator, edit }) => {
+const NUnits = ({ form, edit, formData }) => {
+  const { getFieldDecorator } = form;
   const style = edit
     ? {}
     : {
@@ -25,7 +26,8 @@ const NUnits = ({ getFieldDecorator, edit }) => {
   };
   return (
     <Form.Item label="No.of Units">
-      {getFieldDecorator("nUnits", {
+      {getFieldDecorator("noOfUnits", {
+        initialValue: formData.noOfUnits,
         rules: [
           { required: true, message: "This field is required!" },
           { validator: validate },

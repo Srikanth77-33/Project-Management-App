@@ -1,7 +1,8 @@
 import React from "react";
 import { Form, Input } from "antd";
 
-const Description = ({ getFieldDecorator, edit }) => {
+const Description = ({ form, edit, formData }) => {
+  const { getFieldDecorator } = form;
   const style = edit
     ? {}
     : {
@@ -11,7 +12,8 @@ const Description = ({ getFieldDecorator, edit }) => {
       };
   return (
     <Form.Item label="Description:">
-      {getFieldDecorator("desc", {
+      {getFieldDecorator("description", {
+        initialValue: formData.description,
         rules: [
           { required: true, message: "Username is required!" },
           {

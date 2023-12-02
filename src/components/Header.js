@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Icon,
   Row,
@@ -19,10 +19,17 @@ const Header = (props) => {
   const { collapsed, toggle, data } = props;
   const nav = useNavigate();
 
+  const [value, setValue] = useState("");
+
   const handleSelect = (value) => {
     let key = value.split(" ")[0];
     let state = data.filter((item) => item.key === Number(key))[0];
     nav(`/projects/${state.projectName.replace(/ /g, "-")}`, { state: state });
+    setValue("");
+  };
+
+  const handleChange = (value) => {
+    setValue(value);
   };
 
   return (
@@ -40,9 +47,11 @@ const Header = (props) => {
             <AutoComplete
               size="large"
               style={{ width: "300px" }}
+              value={value}
               placeholder="Search..."
               optionLabelProp="value"
               onSelect={handleSelect}
+              onChange={handleChange}
               dataSource={data.map(
                 ({ projectName, key }) => `${key} ${projectName}`
               )}

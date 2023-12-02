@@ -1,7 +1,8 @@
 import React from "react";
 import { Form, InputNumber } from "antd";
 
-const CompletionPercent = ({ getFieldDecorator, edit }) => {
+const CompletionPercent = ({ form, edit, formData }) => {
+  const { getFieldDecorator } = form;
   const style = edit
     ? {}
     : {
@@ -23,11 +24,12 @@ const CompletionPercent = ({ getFieldDecorator, edit }) => {
   };
   return (
     <Form.Item label="Completed Percentage:">
-      {getFieldDecorator("percentage", {
+      {getFieldDecorator("completionPercentage", {
         rules: [
           { required: true, message: "This Field is required!" },
           { validator: validate },
         ],
+        initialValue: formData.completionPercentage,
       })(<InputNumber style={style} disabled={!edit} />)}
     </Form.Item>
   );

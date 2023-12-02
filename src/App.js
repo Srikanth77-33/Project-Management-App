@@ -1,5 +1,5 @@
 import "./App.css";
-import { Content, Form } from "./components";
+import { Content, Form, Resources, ActiveProjects } from "./components";
 import { HomeLayout } from "./layouts";
 import {
   createBrowserRouter,
@@ -16,8 +16,8 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<HomeLayout />}>
       <Route index element={<Content />} />
-      <Route path="/task1" element={<H1 text="TASK-1" />} />
-      <Route path="/task2" element={<H1 text="TASK-2" />} />
+      <Route path="/active-projects" element={<ActiveProjects />} />
+      <Route path="/resources" element={<Resources />} />
       <Route path="/projects">
         <Route path=":id" element={<Form />} />
         <Route path="a" element={<H1 text="Project-A" />} />

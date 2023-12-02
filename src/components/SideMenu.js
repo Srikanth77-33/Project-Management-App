@@ -6,7 +6,6 @@ import { NavLink } from "react-router-dom";
 import "antd/dist/antd.css";
 
 const { Sider } = Layout;
-const { SubMenu } = Menu;
 
 const SideMenu = ({ collapsed }) => {
   const img = collapsed
@@ -22,22 +21,24 @@ const SideMenu = ({ collapsed }) => {
         collapsed={collapsed}
       >
         <div className="logo">
-          <img src={img} alt="Indegene_logo" />
+          <NavLink to="/">
+            <img src={img} alt="Indegene_logo" />
+          </NavLink>
         </div>
         <Menu mode="inline" collapsed={collapsed}>
           <Menu.Item key="1">
-            <NavLink to="/task1">
-              <Icon type="user" />
-              <span>Task-1</span>
+            <NavLink to="/active-projects">
+              <Icon type="project" />
+              <span>Active Projects</span>
             </NavLink>
           </Menu.Item>
           <Menu.Item key="2">
-            <NavLink to="/task2">
-              <Icon type="video-camera" />
-              <span>Task-2</span>
+            <NavLink to="/resources">
+              <Icon type="file-search" />
+              <span>Resources</span>
             </NavLink>
           </Menu.Item>
-          <SubMenu
+          {/* <Menu.SubMenu
             key="sub1"
             title={
               <span>
@@ -58,7 +59,7 @@ const SideMenu = ({ collapsed }) => {
                 <span>Project-B</span>
               </NavLink>
             </Menu.Item>
-          </SubMenu>
+          </Menu.SubMenu> */}
         </Menu>
       </StyledSider>
     </Affix>
