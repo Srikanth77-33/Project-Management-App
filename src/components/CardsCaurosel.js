@@ -28,21 +28,27 @@ class CardsCaurosel extends Component {
 
   render() {
     return (
-      <Row type="flex" justify="center" align="middle" gutter={24}>
-        <Col>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center'
+        }}
+      >
+        <div>
           <Button onClick={this.handleBackClick} disabled={this.state.tab < 2}>
             <Icon type="left" />
           </Button>
-        </Col>
-        <Col
+        </div>
+        <div
           style={{
             overflow: "hidden",
-            width: "1100px",
+            width: "805px",
           }}
         >
           <Div
             style={{
-              transform: `translateX(-${(this.state.tab - 1) * 75}%)`,
+              transform: `translateX(-${(this.state.tab - 1) * 100}%)`,
             }}
           >
             {cards.map(({ name, icon }, ind) => (
@@ -64,22 +70,22 @@ class CardsCaurosel extends Component {
               </StyledCard>
             ))}
           </Div>
-        </Col>
-        <Col>
+        </div>
+        <div>
           <Button
             onClick={this.handleForwardClick}
             disabled={this.state.tab > 2}
           >
             <Icon type="right" />
           </Button>
-        </Col>
-      </Row>
+        </div>
+      </div>
     );
   }
 }
 
 const Div = styled.div`
-  backgroundcolor: inherit;
+  background-color: inherit;
   display: flex;
   margin: 64px 0px;
   transition: transform 0.5s ease;
