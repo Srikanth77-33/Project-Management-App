@@ -1,9 +1,10 @@
 import React from "react";
 import { Layout, Menu, Icon, Affix } from "antd";
 import styled from "styled-components";
-import logo from "../images/logo.png";
 import { NavLink } from "react-router-dom";
 import "antd/dist/antd.css";
+
+const logo = process.env.PUBLIC_URL + "/logo.png";
 
 const { Sider } = Layout;
 

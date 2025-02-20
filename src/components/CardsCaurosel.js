@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Card, Col, Row, Icon, Button, Typography } from "antd";
+import { Card, Icon, Button, Typography } from "antd";
 import styled from "styled-components";
 
 const cards = [
