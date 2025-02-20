@@ -26,11 +26,11 @@ const Viewers = ({ form, edit, formData, handleChange }) => {
           disabled={!edit}
           style={{ display: edit ? "block" : "none" }}
         >
-          <Option value="1">Sunil</Option>
-          <Option value="2">Srikanth</Option>
-          <Option value="3">Ragav</Option>
-          <Option value="4">Shetty</Option>
-          <Option value="5">Reddy</Option>
+          <Option value="Sunil">Sunil</Option>
+          <Option value="Srikanth">Srikanth</Option>
+          <Option value="Ragav">Ragav</Option>
+          <Option value="Shetty">Shetty</Option>
+          <Option value="Reddy">Reddy</Option>
         </Select>
       )}
       <Typography.Text
