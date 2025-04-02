@@ -1,6 +1,6 @@
 #Indegene - Project Management App
 
-#Demo - https://655b2f392802f36e920d6741--fluffy-boba-0510d3.netlify.app/
+#Demo - https://project-management-app-brown-psi.vercel.app
 
 #Libraries/Frameworks - React, redux, ant design
 
